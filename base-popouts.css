@@ -1,0 +1,271 @@
+/* 15. Popouts */
+  /* 15.a. Pinned Messages and Recent Mentions*/
+.themedPopout-25DgLi {
+  border-left: 2px solid var(--main-color);
+  border-right: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+  border-top: 0px solid transparent;
+}
+
+#app-mount .themedPopout-25DgLi .header-SsaQ8X {
+  border-radius: 0px;
+}
+
+#app-mount .messagesPopout-24nkyi {
+  background: transparent;
+}
+
+.layer-v9HyYc[id*="popout"][style*="absolute; right:"] {
+  transform-origin: 50% -10%;
+  animation: popoutanim 300ms cubic-bezier(.4, 0, 0, 1), opacity 100ms ease 100ms backwards;
+}
+
+#app-mount .messagesPopoutWrap-1MQ1bW,
+#app-mount .recentMentionsPopout-3rCiI6 {
+  border-radius: 0 !important;
+  border-left: 2px solid var(--main-color);
+  border-right: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+  border-top: 0;
+  box-shadow: 0 2px 20px rgba(0,0,0,.4) !important;
+  margin-top: 3px;
+  background-color: var(--primary-color);
+}
+
+#app-mount .header-ykumBX,
+#app-mount .footer-1kmXd4,
+#app-mount .footer-2gL1pp {
+  background-color: var(--tertiary-color);
+}
+
+.content-1o0f9g {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.secondary-dIudih,
+.tertiary-aMXF0g {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .messageGroupWrapper-o-Zw7G {
+  background-color: var(--quaternary-color) !important;
+  border-color: var(--quaternary-color) !important;
+}
+
+.messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .messageGroupWrapper-o-Zw7G:hover {
+  background-color: var(--quaternary-color) !important;
+  border-color: var(--main-color) !important;
+}
+
+.theme-dark .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .messageGroupWrapper-o-Zw7G:hover .actionButtons-1sUUug {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.theme-dark .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group .actionButtons-1sUUug .jumpButton-3DTcS_ {
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+  padding: 2px 7px 3px 7px;
+}
+
+.themedPopout-25DgLi .header-SsaQ8X .subtitle, .themedPopout-25DgLi .text {
+  color: #fff !important;
+}
+
+.jumpButton-3DTcS_,
+.jumpButton-2dvRSC {
+  background-color: var(--main-color) !important;
+}
+
+.hasMoreButton-1MELpI {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: var(--main-color) !important
+}
+
+  /* 15.b. Emoji Picker and Reactions */
+.diversitySelector-tmmMv0 .popout-2nUePc,
+.emojiPicker-3PwZFl {
+  background: var(--primary-color) !important;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px !important;
+}
+
+.infoBar-U6oBFk,
+.wrapper-2N7X54,
+.categoryWrapper-UZ5YNj,
+.categoryList-2Kzf65,
+.header-ywPcAE,
+.inspector-sdLnLS {
+  background-color: var(--quaternary-color)
+}
+
+.emojiItem-14v6tW.emojiItemSelected-1aLkfV,
+.guildIcon-3h-1IH {
+  background: transparent;
+}
+
+#app-mount .emojiItemImageLoading-1yEIxx {
+  opacity: 0;
+}
+
+.contentWrapper-SvZHNd,
+.categoryItemDefaultCategorySelected-_HCKoz, 
+.categoryItemDefaultCategorySelected-_HCKoz:hover {
+  background-color: var(--primary-color)
+}
+
+.emojiItem-14v6tW.emojiItemSelected-1aLkfV::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .5;
+  box-sizing: border-box;
+  border: 2px solid var(--main-color);
+}
+
+.categoryItemDefaultCategory-aBZ6nJ {
+  opacity: .4;
+  border: none !important;
+  transition: all 50ms ease;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.categoryItemDefaultCategory-aBZ6nJ svg {
+  display: none;
+}
+
+.categoryItemDefaultCategory-aBZ6nJ:hover,
+.categoryItemDefaultCategory-aBZ6nJ.categoryItemDefaultCategorySelected-_HCKoz {
+  opacity: 1
+}
+
+.navButtonActive-1MkytQ {
+  background-color: var(--main-color)
+}
+
+.categoryItemDefaultCategory-aBZ6nJ svg {
+  display: none;
+}
+
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='recent'],
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='recent'].categoryItemDefaultCategorySelected-_HCKoz,
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='recent']:hover {
+  background-image: url(https://monstrousdev.github.io/themes/assets/emojiCategory/frequent.svg) !important
+}
+
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='people'],
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='people'].categoryItemDefaultCategorySelected-_HCKoz,
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='people']:hover {
+  background-image: url(https://monstrousdev.github.io/themes/assets/emojiCategory/people.svg) !important
+}
+
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='nature'],
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='nature'].categoryItemDefaultCategorySelected-_HCKoz,
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='nature']:hover {
+  background-image: url(https://monstrousdev.github.io/themes/assets/emojiCategory/nature.svg) !important
+}
+
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='food'],
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='food'].categoryItemDefaultCategorySelected-_HCKoz,
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='food']:hover {
+  background-image: url(https://monstrousdev.github.io/themes/assets/emojiCategory/food.svg) !important
+}
+
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='activity'],
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='activity'].categoryItemDefaultCategorySelected-_HCKoz,
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='activity']:hover {
+  background-image: url(https://monstrousdev.github.io/themes/assets/emojiCategory/activity.svg) !important
+}
+
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='travel'],
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='travel'].categoryItemDefaultCategorySelected-_HCKoz,
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='travel']:hover {
+  background-image: url(https://monstrousdev.github.io/themes/assets/emojiCategory/travel.svg) !important
+}
+
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='objects'],
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='objects'].categoryItemDefaultCategorySelected-_HCKoz,
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='objects']:hover {
+  background-image: url(https://monstrousdev.github.io/themes/assets/emojiCategory/objects.svg) !important
+}
+
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='symbols'],
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='symbols'].categoryItemDefaultCategorySelected-_HCKoz,
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='symbols']:hover {
+  background-image: url(https://monstrousdev.github.io/themes/assets/emojiCategory/symbols.svg) !important
+}
+
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='flags'],
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='flags'].categoryItemDefaultCategorySelected-_HCKoz,
+.categoryItemDefaultCategory-aBZ6nJ[aria-label*='flags']:hover {
+  background-image: url(https://monstrousdev.github.io/themes/assets/emojiCategory/flags.svg) !important
+}
+
+.searchBar-2_Yu-C.searchBarLight-1NxoDG .searchBarInner-1_Tg2R {
+  background: transparent !important;
+  color: var(--white10) !important
+}
+
+.reactionDefault-GBA58K, 
+.reactionSelected-1pqISm {
+  border: 1px solid transparent;
+  transition: all .2s ease-in-out;
+}
+
+.reactionDefault-GBA58K:hover {
+  background-color: transparent !important;
+  border-color: var(--hover-color);
+}
+
+.reactionSelected-1pqISm {
+  background-color: transparent !important;
+  border-color: var(--main-color);
+}
+
+  /* 15.b.1. BBD Emote Menu */
+  #app-mount #bda-qem {
+    background: var(--primary-color) !important;
+    border-bottom: 1px solid var(--quaternary-color) !important;
+  }
+  
+  #bda-qem-twitch-container, #bda-qem-favourite-container {
+    background-color: var(--primary-color) !important;
+  }
+    
+  #app-mount #bda-qem button {
+    background: var(--secondary-color);
+    border-left: 1px solid var(--quaternary-color);
+    box-shadow: var(--quaternary-color) 1px 0 0 0;
+  }
+  
+  #bda-qem button:hover {
+    background-color: var(--quaternary-color) !important;
+  }
+  
+  #bda-qem button.active {
+    background-color: var(--quaternary-color) !important;
+  }
+  
+  .theme-dark #bda-qem button {
+    color: #eee;
+  }
+    
+  .theme-light #bda-qem button {
+    color: #111;
+  }
+  
+  .emote-container {
+    border: 2px solid transparent !important;
+    box-sizing: border-box;
+  }
+  
+  .emote-container:hover {
+    border-color: var(--hover-color) !important;
+    background-color: transparent !important;
